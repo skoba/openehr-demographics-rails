@@ -11,11 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140503095755) do
+ActiveRecord::Schema.define(version: 20140504111224) do
 
   create_table "archetypes", force: true do |t|
     t.string   "archetypeid"
     t.string   "uid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "person_models", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
