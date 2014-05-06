@@ -1,0 +1,3 @@
+describe PeopleHelper do
+
+end
