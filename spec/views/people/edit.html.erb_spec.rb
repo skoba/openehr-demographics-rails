@@ -8,7 +8,6 @@ describe "people/edit" do
   it "renders the edit person form" do
     render
 
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", person_path(@person), "post" do
     end
   end

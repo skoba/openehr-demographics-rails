@@ -1,5 +1,5 @@
 describe PeopleController do
-  let(:valid_attributes) { {  } }
+  let(:valid_attributes) { attributes_for(:person_model) }
 
   let(:valid_session) { {} }
 
