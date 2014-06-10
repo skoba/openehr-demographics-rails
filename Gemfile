@@ -23,7 +23,7 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -34,4 +34,8 @@ gem 'spring',        group: :development
 gem 'rspec-rails',        group: [:development, :test]
 gem 'guard-rspec',        group: [:development, :test]
 gem 'factory_girl_rails', group: [:development, :test]
-gem 'capybara',  group: [:development, :test]
+
+gem 'capybara',  group: :test
+gem 'faker', group: :test
+gem 'database_cleaner', group: :test
+gem 'launchy', group: :test

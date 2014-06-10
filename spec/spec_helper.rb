@@ -16,6 +16,8 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.include FactoryGirl::Syntax::Methods
+  config.raise_errors_for_deprecations!
+
   config.before(:all) do
     FactoryGirl.reload
   end
