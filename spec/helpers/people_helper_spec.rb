@@ -1,3 +1,3 @@
-describe PeopleHelper do
+describe PeopleHelper, :type => :helper do
 
 end

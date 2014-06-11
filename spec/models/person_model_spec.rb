@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PersonModel do
+describe PersonModel, :type => :model do
   let(:person_model) {build :person_model}
 
   it 'is an instance of PersonModel' do
