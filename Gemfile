@@ -34,6 +34,7 @@ gem 'unicorn'
 gem 'rspec-rails',        group: [:development, :test]
 gem 'guard-rspec',        group: [:development, :test]
 gem 'factory_girl_rails', group: [:development, :test]
+gem 'rspec-collection_mather', group: [:development, :test]
 
 gem 'capybara',  group: :test
 gem 'faker', group: :test
