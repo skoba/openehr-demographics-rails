@@ -2,7 +2,7 @@ class CreateAddresses < ActiveRecord::Migration
   def change
     create_table :addresses do |t|
       t.string :post_code
-      t.string :type, null: false
+      t.string :address_type, null: false
       t.string :unstructured
       t.string :unstructured_syllabic
       t.string :prefecture

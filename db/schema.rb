@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20140611061424) do
 
   create_table "addresses", force: true do |t|
     t.string   "post_code"
-    t.string   "type",                  null: false
+    t.string   "address_type",          null: false
     t.string   "unstructured"
     t.string   "unstructured_syllabic"
     t.string   "prefecture"
@@ -31,32 +31,5 @@ ActiveRecord::Schema.define(version: 20140611061424) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "archetypes", force: true do |t|
-    t.string   "archetypeid"
-    t.string   "uid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "person_models", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "rms", force: true do |t|
-    t.string   "node_id"
-    t.string   "path"
-    t.integer  "archetype_id"
-    t.string   "text_value"
-    t.float    "num_value"
-    t.date     "date_value"
-    t.time     "time_value"
-    t.boolean  "bool_value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "rms", ["archetype_id"], name: "index_rms_on_archetype_id"
 
 end
